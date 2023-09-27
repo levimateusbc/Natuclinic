@@ -1,0 +1,423 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{ /*Mexe em todo o código, diferente do body que mexe apenas dentro do código que está n body*/
+    padding: 0px;
+    margin: 0px;
+}
+header{
+   display: flex;
+   justify-content: center;
+   height: 120px;
+}
+.container{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    /* width: 150px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    color: #727272;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active a:hover{
+    background-color: blue;
+    color: white;
+}
+#banner{
+    background-image:url('images/img3.avif');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+
+}
+.banner_headline{
+    display: flex;
+    flex: 1;
+    /*it was used flex1 here and banner is the father of banner_headline, as there are 2 objects inside banner(banner_headline and banner_options), and they follow flex-direction:collumn, if it were used flex 1 in both they'd have the same size, but it was used only in banner_headline, then, banner_options which has a size will remain the same size that was set before and banner_headline will take the rest of the size. */
+    justify-content: center;
+    flex-direction: column;/*After 
+    changing the direction, the justfy-content become equal align-items, they one receive the*/
+}
+.text1{
+    display: flex;
+    align-items: center;
+}
+.banner_headline h1{
+    color: white;
+    font-size: 55px;
+    text-shadow: 0px 1px 0 #000000 ;
+    margin: 0px;
+    padding: 0px;
+    max-width: 300px;
+}
+.banner_headline h2{
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0 #000000;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.banner_options{
+    height: 210px;
+    display: flex;
+   
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex:1;
+    color: white;
+    padding: 20px;
+}
+.banner1{
+    background-color: #39aae1;
+   
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+.banner_title{
+    font-size: 18px;
+}
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_options a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    display: inline-block;
+    font-size: 13px;
+}
+.time_tabble{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    border-bottom: 1px solid rgb(173, 168, 168);
+    
+}
+#geral{
+    display: flex;
+    justify-content: center;
+}
+/* It's important to know that when we put display flex and justify-content:center what is inside geral will suffer this, how container has a width and it not covers all scream this container(if put a background color becomes clear) will stay in the center, and the website will follow the pattern that all texts start in the same line, . SUMMARY(o texto começa igual pra todos limitado pela largura, o texto não fica no meio do container por que o container não tem justify-content:center, mas o texto de todo site começa um pouco a frente pelo fato da largura do container tá reduzida, mas o container tá no centro pois em geral nós colocamos o justify-content:center */
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar{
+    background-color: #36a9e1;
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+}
+.widget_body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    
+}
+.widget_ball .widget_body{
+    row-gap: 20px;
+}
+
+.widget_contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.widget_form{
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1;
+}
+.img_widget{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+.picture{
+    height: 1px;
+    width: 100%;
+    background-color: #727272;
+    margin-top: 20px;
+}
+
+article .news_data{
+    display: flex;
+}
+
+article .news_posted_at{
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_comments{
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+article .thumb img{
+    width: 100%;
+    height: auto;
+}
+
+article .thumb{
+    margin-top: 30px;
+}
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 26px;
+
+}
+article .resume{
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 18px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+article a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    min-width: 300px;/*Cuzy exist a minimum, after aplying flex 1, all the images won't stay at the same place, cuzy when we use flex 1 all the place is used and the content is shared and divide each element with equal size, after setting a minimum size to the things, and using flex-wrap, it will have a proper size.*/
+    margin-right: 30px;
+    flex: 1;
+}
+footer{
+    display: flex;
+    background-color: #1e1e1e;
+    /* height: 400px; *Lembrar desse detalhe, se deixar a altura fixa logo no início pelo código estar dentro de um container, e no container ter space-between, e estar em coluna, ficará um espaçamento no formato de coluna pois sobrará espaço, logo o correto é não definir de cara o tamanho do footer*/ 
+    justify-content: center;
+}
+.header_title1{
+    background-color: #39aae1;
+}
+.header_title2{
+    /* max-width: 300px;
+    height: 100px; */
+    background-color: #0079c7;
+}
+.header_title3{
+    /* width: 200px;
+    height: 100px; */
+    background-color: #2b4c99;
+}
+.footer{
+    display: flex;
+}
+.header_title1,
+.header_title2,
+.header_title3{
+    color: #FFFFFF;
+    padding: 20px;
+    flex: 1;
+    height: 60px;
+}
+.h1head,
+.h6head{
+    padding: 0px;
+    margin: 0px;
+}
+.h6head{
+    margin-top: 10px;
+}
+.Flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+}
+.test{
+    display: flex;
+    justify-content: center;
+        
+}
+
+.footer3 .widget_title_text{
+    color: white;
+}
+.footer3 .widget_body{
+    color: #5c5c5c; /*why*/
+    display: flex;
+    flex-direction: column;
+}
+.text,
+.text2,
+text{
+    color: #767575;
+}
+.text2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+.text{
+    margin-bottom: 10px;
+}
+.footer3{
+    display: flex;
+    flex: 1;/*Using flex  1 because the text inside each div will fall and each of three parts. natuclinic, latets news  and latest informations will have the same size.*/
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+.footer3 .widget_body{
+    color:white;
+}
+.footer_copy{
+   border-top: 1px solid #2c2c2c;
+   height: 40px;
+   color: #5c5c5c;
+   font-size: 12px;
+   margin-top: 30px;
+}
+.menuMobile{
+    display: none; /*it doesn't show up, i will inside media*/
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{
+    background-color: #39aae1;
+    height: 3px;
+    display: none;
+}
+
+@media (max-width:600px){
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h2{
+        font-size: 16px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside{
+        padding: 20px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer2{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy{
+        margin-left: 20px;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;/*ver isso com evilyn*/
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .mm_line{
+        display: block;
+    }
+
+    .margin-top-10rem{
+        margin-top: 10rem;
+    }
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        window.onload=function(){
+            document.querySelector(".menuMobile").addEventListener("click",function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = "none";
+
+                }else {
+                    document.querySelector(".menu nav ul ").style.display = 'flex';
+                }
+            })
+        }
+    </script>
+    <title>YourHealth</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header> <!--Usar sempre tag semanticas, para dividir os códigos para os leitores de código.-->
+        <div class="container">
+            <div class="logo">
+                <img src="images/clinic.png" alt="">
+            </div>
+            <div class="menu">
+                <nav><!--A tag semâncica nav serve para onde tem menu de navegação.-->
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="">HOME</a>
+                        </li>
+                        <li class="active">
+                            <a href="">HOME</a>
+                        </li>
+                        <li class="active">
+                            <a href="">HOME</a>
+                        </li>
+                        <li class="active">
+                            <a href="">HOME</a>
+                        </li>
+                        <li class="active">
+                            <a href="">HOME</a>
+                        </li>
+                        <li class="active">
+                            <a href="">HOME</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>
+                    Your Health come first
+                </h1>
+                <h2>
+                    Here we take care of you
+                </h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">
+                        Urgency Case
+                    </div>
+                    <div class="banner_desc">
+                        Are you in need a doctor and YourHealth is closed? call ungency number and will be provided a doctor for you.
+                    </div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">
+                        Available Doctors Timetabble
+                    </div>
+                    <div class="banner_desc">
+                        we have doctors available from monday to saturday, clic in the link bellow and learn more.
+                    </div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">
+                        Busines hours
+                    </div>
+                    <div class="banner_desc">
+                        <div class="time_tabble">
+                            <h3>Monday-Friday</h3>
+                            <h3>8-18</h3>
+                        </div>
+                        <div class="time_tabble">
+                            <h3>Saturday</h3>
+                            <h3>10-16</h3>
+                        </div>
+                        <div class="time_tabble">
+                            <h3>Sunday</h3>
+                            <h3>8-14</h3>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="geral"> <!-- It's important to put a id and inside this id put display flex and justify-content because it will follow container's pattern -->
+        <div class="container">
+            <section>
+                <div class="widget margin-top-10rem">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest news</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 12 DEC</div>
+                                    <div class="news_comments"> 2</div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/odont.png"" alt="">
+                                </div>
+                                <div class="news_title">
+                                    Deltal treatment
+                                </div>
+                                <div class="resume">
+                                    Take care of your smile with the confidence and experience you deserve. At Natuclinic we are dedicated to providing unique and personalized dental treatments for you and your family. 
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 12 DEC</div>
+                                    <div class="news_comments"> 2</div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/odont.png"" alt="">
+                                </div>
+                                <div class="news_title">
+                                    Deltal treatment
+                                </div>
+                                <div class="resume">
+                                     Take care of your smile with the confidence and experience you deserve. At Natuclinic we are dedicated to providing unique and personalized dental treatments for you and your family.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 12 DEC</div>
+                                    <div class="news_comments"> 2</div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/odont.png" alt="">
+                                </div>
+                                <div class="news_title">
+                                    Deltal treatment
+                                </div>
+                                <div class="resume">
+                                    Take care of your smile with the confidence and experience you deserve. At Natuclinic we are dedicated to providing unique and personalized dental treatments for you and your family.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 12 DEC</div>
+                                    <div class="news_comments"> 2</div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/odont.png"" alt="">
+                                </div>
+                                <div class="news_title">
+                                    Deltal treatment
+                                </div>
+                                <div class="resume">
+                                    Take care of your smile with the confidence and experience you deserve. At Natuclinic we are dedicated to providing unique and personalized dental treatments for you and your family.
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget widget_ball">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="widget_form"></div>
+                        <div class="widget_form"></div>
+                        <div class="widget_form"></div>
+                        <div class="widget_form"></div>
+                        <div class="widget_form"></div>
+                        <div class="widget_form"></div> 
+                        
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make an apointment</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        
+                        <b6>
+                            Contact us with the informations bellow.
+                        </b6>
+                        <div class="picture"></div>
+                            <div class="widget_contact">
+                                <img src="img/telefone-tipico-antigo.png" alt="" class="img_widget">
+                                <h1>88 9867-2211</h1>
+                            </div>
+                        <div class="picture"></div>
+                            <div class="widget_contact">
+                                <img src="img/o-email.png" alt="" class="img_widget">
+                                <h1>Natuclinic@gmail.com</h1>
+                            </div>
+
+
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        
+    </section>
+    <footer>
+        <div class="container Flexcolumn">
+            <div class="footer">
+                <div class="header_title1">
+                    <h2 class="h1head">
+                        Health Insurance
+                    </h2>
+                    <h6 class="h6head">
+                        Here in Natuclinic we have the best for you
+                    </h6>
+                </div>
+                <div class="header_title2">
+                    <h2 class="h1head">
+                        Monthly plans
+                    </h2>
+                    <h6 class="h6head">
+                        Here in Natuclinic we have the best for you
+                    </h6>
+                </div>
+                <div class="header_title3">
+                    <h2 class="h1head">
+                        Online registration
+                    </h2>
+                    <h6 class="h6head">
+                        Here in  Natuclinic we have the best for you
+                    </h6>
+                </div>
+            </div> 
+            <div class="footer2">
+                <div class="footer3">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Natuclinic  clinic</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="text">
+                            Natuclinic has a lot of health plans for you
+                        </div>
+                        <div class="text2">
+                            <div class="text4">
+                                <div>Natuclinic clinic</div>
+                                <div>adbure fariane street</div>
+                                <div>Beiter north</div>
+                                <div>VIC 5003, Brasil</div>
+                            </div>   
+                            <div class="text5">
+                                <br/>
+                                <div>+132 654 999</div>
+                                <div>+135 000 863</div>
+                                <div>Natuclinic@gmail.com</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer3">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest news</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">   <div class="text">
+                        Natuclinic has a lot of health plans for you
+                    </div>
+                    <div class="text2">
+                        <div class="text4">
+                            <div>Natuclinic clinic</div>
+                            <div>adbure fariane street</div>
+                            <div>Beiter north</div>
+                            <div>VIC 5003, Brasil</div>
+                        </div>   
+                        <div class="text5">
+                            <br/>
+                            <div>+132 654 999</div>
+                            <div>+135 000 863</div>
+                            <div>Natuclinic@gmail.com</div>
+                        </div>
+                    </div></div>
+                </div>
+                <div class="footer3">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest informations</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">   <div class="text">
+                        Natuclinic has a lot of health plans for you
+                    </div>
+                    <div class="text2">
+                        <div class="text4">
+                            <div>Natuclinic clinic</div>
+                            <div>adbure fariane street</div>
+                            <div>Beiter north</div>
+                            <div>VIC 5003, Brasil</div>
+                        </div>   
+                        <div class="text5">
+                            <br/>
+                            <div>+132 654 999</div>
+                            <div>+135 000 863</div>
+                            <div>Natuclinic@gmail.com</div>
+                        </div>
+                    </div></div>
+                </div>
+                
+            </div>
+            <div class="footer_copy">
+                Coyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="test">   
+        <div class="container Flexcolumn">
+            <h1>teste1</h1>
+            <h1>teste2</h1>
+            dkdnjdn
+        </div>
+        <div class="container Flexcolumn">
+            <h1>teste1</h1>
+            <h1>teste2</h1>
+            dkdnjdn
+        </div>
+        colocar uma coluna no test
+        
+    </div> -->
+
+
+
+</body>
+</html>
+
+<!--Ver telefone com evilyn e email o pq da linha quebrar linha-->
