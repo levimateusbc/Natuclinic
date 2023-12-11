@@ -280,7 +280,7 @@ footer{
     color: #FFFFFF;
     padding: 20px;
     flex: 1;
-    height: 60px;
+    /* height: 60px; */
 }
 .h1head,
 .h6head{
@@ -405,9 +405,9 @@ text{
     header{
         height: auto;
     }
-    .logo{
+    /* .logo{
         margin-left: 20px;
-    }
+    } */
     .menuMobile{
         display: flex;
         flex-direction: column;
@@ -419,5 +419,24 @@ text{
 
     .margin-top-10rem{
         margin-top: 10rem;
+    }
+    .logo img{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:1100px) and (min-width:600px) {
+    .logo img,
+    .banner_headline h2,
+    .banner_headline h1
+    {
+        margin-left:20px;
+    }
+    .widget_title_text,
+    .widget_title_bar,
+    article .news_posted_at,
+    .thumb img,
+    article .news_title,
+    article .resume {
+        margin-left: 20px;
     }
 }
